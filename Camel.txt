@@ -1,43 +1,31 @@
-string = "Hello"
+string = 'Hello'
 
-def fun(st):
+def camel(strin):
+    idc = 0
     mass = ""
-    st = list(st)
-    for i in st:
-        idj = st.index(i)
-        if st.index(i) % 2 != 0:
+    for i in string:
+        if idc % 2 == 0:
             if ord(i) > 96 and ord(i) < 123:
-                mass=mass+i
+                mass = mass + i
             elif ord(i) > 64 and ord(i) < 91:
-                letter1 = chr(ord(i) + 32)
-                ind1 = st.index(i)
-                mass=mass+letter1
-                
+                mass = mass + chr(ord(i) + 32)
             else:
                 continue
-        elif st.index(i) % 2 == 0:
+            
+        elif idc % 2 != 0:
             if ord(i) > 96 and ord(i) < 123:
-                letter1 = chr(ord(i) - 32)
-                ind1 = st.index(i)
-                mass=mass+letter1
+                mass = mass + chr(ord(i) - 32)
             elif ord(i) > 64 and ord(i) < 91:
-                mass=mass+i
-               
+                mass = mass + i
             else:
                 continue
         else:
             continue
-                
+        idc += 1
     return mass
     
-print(fun(string))
-#def su(arr):
     
-    #ret=''.join(arr)
-    #return ret
-    
-result = fun(string)
-        
+result = camel(string)
 
 print(result)
                 
