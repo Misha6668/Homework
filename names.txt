@@ -1,0 +1,10 @@
+['ivanov':' ivanov@inbox.ru',
+ 'sergeevna','sergeevna@gmail.com',
+ 'petrovik':'petrovik@gmail.com',
+ 'kuznetsova':'kuznetsova@mail.ru',
+ 'borisenko':'borisenko@qq.com',
+ 'lesnikova':'lesnikova@yandex.ru',
+ 'chernova':'chernova@protonmail.com',
+ 'lukyanenko':'lukyanenko@icloud.com',
+ 'gerasimov': 'gerasimov@outlook.com',
+'serebryanikova': 'serebryanikova@rambler.ru']
