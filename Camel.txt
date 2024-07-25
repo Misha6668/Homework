@@ -1,0 +1,31 @@
+string = 'Hello'
+
+def camel(strin):
+    idc = 0
+    mass = ""
+    for i in string:
+        if idc % 2 == 0:
+            if ord(i) > 96 and ord(i) < 123:
+                mass = mass + i
+            elif ord(i) > 64 and ord(i) < 91:
+                mass = mass + chr(ord(i) + 32)
+            else:
+                continue
+            
+        elif idc % 2 != 0:
+            if ord(i) > 96 and ord(i) < 123:
+                mass = mass + chr(ord(i) - 32)
+            elif ord(i) > 64 and ord(i) < 91:
+                mass = mass + i
+            else:
+                continue
+        else:
+            continue
+        idc += 1
+    return mass
+    
+    
+result = camel(string)
+
+print(result)
+                
