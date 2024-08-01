@@ -1,0 +1,28 @@
+class Quiz():
+    def __init__(self, name):
+        self.name = name
+        self.correct = [1,1,2,1]
+        
+        
+    def quizy(self,a1,a2,a3,a4):
+        
+        asnw = [a1, a2, a3, a4]
+        
+        good = 0
+        bad = 0
+        for i, j in zip(self.correct, answ):
+            if i == j:
+                good += 1
+            else:
+                bad += 1
+                
+        print(f'{self.name}, you have {good} correct answers and {bad} incorrect answers')
+
+
+q1 = int(input('What is bigger?\n1 - sun\n2 - jupiter\n: '))
+q2 = int(input('Who was president of america in 2023?\n1 - Joe Biden\n2 - Donald Trump\n: '))
+q3 = int(input('What is number pi?\n1 - 3,1679\n2 - 3,1415\n3 - 5,1983\n: '))
+q4 = int(input('Is queen Elizabeth II alive?\n1 - no\n2 - yes\n: '))        
+quiz = Quiz('Misha')
+
+quiz.quizy(q1,q2,q3,q4)
